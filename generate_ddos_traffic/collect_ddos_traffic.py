@@ -52,7 +52,7 @@ class CollectTrainingStatsApp(switch.SimpleSwitch13):
         tp_src = 0
         tp_dst = 0
 
-        file0 = open("Attacks.csv","a+")
+        file0 = open("FlowStatsfile.csv","a+")
 
         body = ev.msg.body
         for stat in sorted([flow for flow in body if (flow.priority == 1) ], key=lambda flow:
